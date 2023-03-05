@@ -1,18 +1,19 @@
-import { Button } from "../../components/Button";
-import { Title } from "../../components/Title";
+import './style.css'
 
-export function Login (){
+import { Title } from '../../components/Title'
+import { SubTitle } from '../../components/SubTitle'
+import { FormLogin } from '../../components/FormLogin'
+
+
+export function Login() {
     return (
         <>
             <header>
-                <Title text="Login"/>
+                <Title text='Bem Vindo de Volta!' />
             </header>
             <main>
-                <form>
-                    <input type="email" name="email" placeholder="Email"/>
-                    <input type="password" name="senha" placeholder="Senha"/>
-                    <Button text="Entrar" type="primary"/>
-                </form>
+                <SubTitle text='Login' />
+                <FormLogin/>
             </main>
         </>
     )
