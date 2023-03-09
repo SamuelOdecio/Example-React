@@ -12,3 +12,20 @@
 .galleryCaretLeft{
    padding-right: 60px;
 }
+
+.titleMovie ,p{
+   padding-top: 10px;
+   font-size: 250%;
+   color: white;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.description ,h2{
+   width: 600px;
+   padding-top: 5px;
+   font-size: 100%;
+   color: white;
+   font-weight: bold;
+   text-align: justify;
+}
