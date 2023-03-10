@@ -27,24 +27,28 @@ export function Gallery() {
         }
     }
 
+    function initialClick(){
+        setId(0)
+    }
+
 
     return (
         <>
             <section className="gallery">
                 <img src={movie.images.poster} alt="" />
-                    <div className="tittleMovie">
-                        <p>{movie.title}</p>
+                    <div className="titleMovie">
+                        <h1>{movie.title}</h1>
+                        
                     </div>
-                    <div className="description">
-                        <h2>{movie.synopsis}</h2>
+                    <div className="descriptionMovie">
+                        <h2>Lançamento: {movie.releaseDate}</h2>
+                        <h2>Duração: {movie.duration}</h2>
+                        <h2>Faixa Etária: {movie.parentalRating}</h2>
                     </div>
-                    <div className="Arrows"> 
-                        <div className='galleryCaretLeft'>
+                    <div className="buttons"> 
                             <Button text='Anterior' type="default" onClick={beforeClick}/>
-                        </div>
-                        <div className='galleryCaretRight'>
-                        <Button text='Próximo' type="default" onClick={nextClick}/>
-                        </div>
+                            <Button text='Inicio' type="default" onClick={initialClick}/>
+                            <Button text='Próximo' type="default" onClick={nextClick}/>
                     </div>
             </section>
         </>

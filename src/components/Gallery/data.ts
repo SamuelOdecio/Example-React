@@ -45,7 +45,7 @@ export const movies = [
         "categoryId": 1,
         "synopsis": "Após a morte de sua mãe e sem ter nenhum outro parente conhecido, Evie faz um teste de DNA… e descobre um primo perdido que ela não sabia que existia. Convidada pela sua nova família para um casamento, ela sente uma grande atração pelo sexy anfitrião. Mas Evie logo terá que lutar pela sobrevivência ao descobrir os segredos sinistros da história de sua família e as intenções perturbadoras por trás de sua generosidade pecaminosa.",
         "duration": "1h 38m",
-        "parentalRating": "PG-13",
+        "parentalRating": "14",
         "images": {
             "background": "https://www.themoviedb.org/t/p/w500_and_h282_face/99CeVSYiZcdqmVXi4S9U4tLuwg8.jpg",
             "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AtiAjYCyUop1uyjJhKzmi3qnNLp.jpg"

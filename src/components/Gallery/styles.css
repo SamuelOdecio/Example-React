@@ -5,27 +5,29 @@
     align-items: center;
  }
 
- .Arrows{
+ .buttons{
    display: flex;
    padding-top: 20px;
+   gap: 10px;
  }
-.galleryCaretLeft{
-   padding-right: 60px;
+
+.titleMovie{
+   max-width: 300px;
 }
 
-.titleMovie ,p{
+.titleMovie ,h1{
    padding-top: 10px;
-   font-size: 250%;
+   padding-bottom: 10px;
+   font-size: clamp(1em,1em + 1vw,1.5em);
    color: white;
    font-weight: bold;
    text-decoration: underline;
 }
 
-.description ,h2{
-   width: 600px;
-   padding-top: 5px;
+
+.descriptionMovie ,h2{
+   width: 300px;
    font-size: 100%;
    color: white;
-   font-weight: bold;
-   text-align: justify;
+   text-align: left;
 }
