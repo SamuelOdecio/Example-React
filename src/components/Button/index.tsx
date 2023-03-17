@@ -2,7 +2,7 @@ import { MouseEventHandler } from 'react'
 import './style.css'
 type ButtonProps = {
     text: string,
-    type: "default" | "primary",
+    type: "default" | "primary" | "usuario",
     onClick?:MouseEventHandler
 }
 
