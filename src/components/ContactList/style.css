@@ -1,0 +1,11 @@
+.ContactList {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ContactList {
+    text-align: center;
+}

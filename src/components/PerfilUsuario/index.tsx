@@ -1,19 +1,23 @@
 import './style.css'
-
+import { Contact } from '../../types'
 import { Button } from '../Button'
 
+type PerfilUsuarioProps = {
+    contactData:Contact;
+}
 
-export function PerfilUsuario() {
+export function PerfilUsuario({contactData}:PerfilUsuarioProps) {
+    const {name, email, picture} = contactData
     return (
         <>
             <div className='Usuario'>
                 <div className='LayoutUsuario'>
                     <div className='FotoUsuario'>
-                        <img src="https://randomuser.me/api/portraits/men/68.jpg"></img>
+                        <img src={picture.medium}></img>
                     </div>
                     <div className='DadosUsuario'>
-                        <b>NOME SOBRENOME</b>
-                        <a>estudante12345@estudante.ifms.edu.br</a>
+                        <p>{name.first}</p>
+                        <p>{email}</p>
                         <Button text='Detalhes' type='usuario' />
                     </div>
                 </div>
