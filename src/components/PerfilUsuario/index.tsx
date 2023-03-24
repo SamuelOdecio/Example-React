@@ -3,11 +3,11 @@ import { Contact } from '../../types'
 import { Button } from '../Button'
 
 type PerfilUsuarioProps = {
-    contactData:Contact;
+    contactData: Contact,
 }
 
-export function PerfilUsuario({contactData}:PerfilUsuarioProps) {
-    const {name, email, picture} = contactData
+export function PerfilUsuario({ contactData }: PerfilUsuarioProps) {
+    const { name, email, picture } = contactData
     return (
         <>
             <div className='Usuario'>

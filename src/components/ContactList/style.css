@@ -1,11 +1,26 @@
 .ContactList {
     width: 500px;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    overflow-x: auto;
 }
 
 .ContactList {
     text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 41, 43);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
 }
