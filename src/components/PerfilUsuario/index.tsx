@@ -1,6 +1,7 @@
 import './style.css'
 import { Contact } from '../../types'
 import { Button } from '../Button'
+import BasicButtons from '../ButtonMui'
 
 type PerfilUsuarioProps = {
     contactData: Contact,
@@ -18,7 +19,7 @@ export function PerfilUsuario({ contactData }: PerfilUsuarioProps) {
                     <div className='DadosUsuario'>
                         <p>{name.first}</p>
                         <p>{email}</p>
-                        <Button text='Detalhes' type='usuario' />
+                        <Button variant="contained">Contained</Button>
                     </div>
                 </div>
 

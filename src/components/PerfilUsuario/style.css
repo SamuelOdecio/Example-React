@@ -1,6 +1,6 @@
 .Usuario{
-    width: 500px;
-    height: 170px;
+    width: 350px;
+    height: 150px;
     background-color: white;
     border-radius: 8px;
     display: flex;
@@ -9,8 +9,8 @@
 
 .Usuario img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 .FotoUsuario {
     padding: 20px 20px 20px 20px;
@@ -21,9 +21,9 @@
 }
 
 .DadosUsuario{
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
 }
