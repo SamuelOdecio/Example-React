@@ -4,8 +4,9 @@ import { CaretCircleRight, CaretCircleLeft } from 'phosphor-react';
 
 import { movies } from './data';
 import { useState } from 'react';
-import { Button } from '../Button';
+//import { Button } from '../Button';
 import ReactDOM from 'react-dom/client';
+import Button from '@mui/material/Button';
 
 export function Gallery() {
 
@@ -46,9 +47,10 @@ export function Gallery() {
                         <h2>Faixa Etária: {movie.parentalRating}</h2>
                     </div>
                     <div className="buttons"> 
-                            <Button text='Anterior' type="default" onClick={beforeClick}/>
-                            <Button text='Inicio' type="default" onClick={initialClick}/>
-                            <Button text='Próximo' type="default" onClick={nextClick}/>
+                    <Button variant="contained" color="secondary" size="large" onClick={beforeClick}>Anterior</Button>
+                    <Button variant="contained" color="secondary" size="large" onClick={initialClick}>Inicio</Button>
+                    <Button variant="contained" color="secondary" size="large" onClick={nextClick}>Próximo</Button>
+
                     </div>
             </section>
         </>
