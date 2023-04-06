@@ -1,4 +1,4 @@
-import './style.css'
+
 
 //import { Button } from '../../components/Button'
 import { Title } from '../../components/Title'
@@ -8,23 +8,24 @@ import { MenuItem } from '../../components/MenuItem'
 import { AddressBook, ImageSquare } from 'phosphor-react'
 import Button from '@mui/material/Button';
 import { BaseLayout } from '../../layout/BaseLayout'
+import { CssBaseline } from '@mui/material';
 
 export function Home() {
 
 
     return (
-        
-        <>
-        <BaseLayout appBarTitle="HOME">
+
+        <CssBaseline>
+            <BaseLayout appBarTitle="HOME">
                 <div className="action-buttons">
                     <Link to={`/Login`}>
-                    <Button variant="contained" color="secondary" size="large">Login</Button>
+                        <Button variant="contained" color="secondary" size="large">Login</Button>
                     </Link>
                     <Link to={`/Register`}>
-                    <Button variant="contained" color="secondary" size="large">Registre-se</Button>
+                        <Button variant="contained" color="secondary" size="large">Registre-se</Button>
                     </Link>
                     <Link to={`/Gallery`}>
-                    <Button variant="contained" color="secondary" size="large">Galeria</Button>
+                        <Button variant="contained" color="secondary" size="large">Galeria</Button>
                     </Link>
 
                     <Menu>
@@ -36,8 +37,9 @@ export function Home() {
                         </Link>
                     </Menu>
                 </div>
-        </BaseLayout>
-        </>
+            </BaseLayout>
+        </CssBaseline>
+       
     )
 
 }

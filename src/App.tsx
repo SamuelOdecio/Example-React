@@ -10,6 +10,7 @@ import { Register } from './pages/Register'
 import { StateExemple } from './pages/StateExemple'
 import { Gallery } from './components/Gallery'
 import { Agenda } from './pages/Agenda'
+
  
 
 function App() {

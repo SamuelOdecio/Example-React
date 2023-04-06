@@ -1,4 +1,4 @@
-import './styles.css'
+
 
 import { CaretCircleRight, CaretCircleLeft } from 'phosphor-react';
 
@@ -7,6 +7,7 @@ import { useState } from 'react';
 //import { Button } from '../Button';
 import ReactDOM from 'react-dom/client';
 import Button from '@mui/material/Button';
+import { CssBaseline } from '@mui/material';
 
 export function Gallery() {
 
@@ -34,7 +35,7 @@ export function Gallery() {
 
 
     return (
-        <>
+        <CssBaseline>
             <section className="gallery">
                 <img src={movie.images.poster} alt="" />
                     <div className="titleMovie">
@@ -53,6 +54,6 @@ export function Gallery() {
 
                     </div>
             </section>
-        </>
+    </CssBaseline>
     );
 }
